@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+void main ()
+{
+    
+    //LOGIC: to find thge string length and tohen to divide it by 2, soo that we get the middle letter
+  char msg[] = "WATER";
+  char str[10];
+
+  int i = 0, j = 0;
+ // clrscr ();
+
+ i=strlen(msg);
+ printf("%d", i);
+ j=i/2;
+ //printf("%d", j);
+ printf("%c\n", msg[j]);
+ printf("%c%c\n", msg[j], msg[j+1]);
+ printf("%c%c%c\n", msg[j], msg[j+1],msg[j+2]);
+ printf("%c%c%c%c\n", msg[j], msg[j+1],msg[j+2],msg[j-2]);
+ printf("%c%c%c%c%c\n", msg[j], msg[j+1],msg[j+2],msg[j-2], msg[j-1]);
+     
+ 
+  getch ();
+}
